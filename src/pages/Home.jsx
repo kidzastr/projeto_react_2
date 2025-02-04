@@ -1,11 +1,14 @@
-import { Exemplo } from "../componentes/ComponenteExemplo";
+import { Container } from "react-bootstrap";
+import CarouselAnuncios from "../componentes/CarouselAnuncios";
+import { ListaProdutos } from "../componentes/ListaProdutos";
+import NavBar from "../componentes/NavBar";
 
 function Home() {
   return (
-    <div>
-      <Exemplo/>
-      HOME EXEMPLO
-    </div>
+    <NavBar>
+      <CarouselAnuncios />
+      <ListaProdutos />
+    </NavBar>
   );
 }
 
